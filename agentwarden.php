@@ -41,6 +41,7 @@ require_once AGWD_PLUGIN_DIR . 'includes/audit-log.php';
 require_once AGWD_PLUGIN_DIR . 'includes/ability-category.php';
 require_once AGWD_PLUGIN_DIR . 'includes/abilities/read-products.php';
 require_once AGWD_PLUGIN_DIR . 'includes/abilities/read-orders.php';
+require_once AGWD_PLUGIN_DIR . 'includes/abilities/read-customers.php';
 require_once AGWD_PLUGIN_DIR . 'includes/admin-page.php';
 
 /**

@@ -9,8 +9,9 @@
  * the ability output and the audit log - see AGENTWARDEN_STRATEGY.md §1.1.
  * Only the customer's numeric user ID is exposed, same as a WooCommerce
  * REST API response scoped without the `read_private_orders`-level detail.
- * A dedicated customer-read ability (and the PII/consent policy it needs) is
- * intentionally deferred past this skeleton, not silently included here.
+ * A dedicated customer-read ability now exists (includes/abilities/read-customers.php)
+ * for when an agent actually needs contact details, kept separate so it can be
+ * called deliberately rather than leaking through every order read.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
