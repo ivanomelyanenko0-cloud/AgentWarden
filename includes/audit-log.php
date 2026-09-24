@@ -1,10 +1,10 @@
 <?php
 /**
  * Read-only audit log: records every ability execution so a store owner can
- * see what an agent looked at. Deliberately PII-free by design (see
- * AGENTWARDEN_STRATEGY.md §1.1) - entries store object IDs and counts, never
- * customer names, emails, addresses, or any other personal data, even though
- * the ability's own return value to the agent may legitimately include it.
+ * see what an agent looked at. Deliberately PII-free by design - entries
+ * store object IDs and counts, never customer names, emails, addresses, or
+ * any other personal data, even though the ability's own return value to
+ * the agent may legitimately include it.
  *
  * Stored as a single non-autoloaded option, capped at AGWD_AUDIT_LOG_LIMIT
  * entries (oldest dropped first) - the same "aggregate in one option, prune

@@ -1,20 +1,18 @@
 <?php
 /**
  * Read-only customer abilities: `agentwarden/list-customers` and
- * `agentwarden/get-customer`. Completes the Free "read" axis from
- * AGENTWARDEN_STRATEGY.md §3 (1.0.0) - deliberately left out of the first
- * skeleton pass pending a PII decision (see the note this replaces in
- * includes/abilities/read-orders.php).
+ * `agentwarden/get-customer`. Deliberately left out of the first skeleton
+ * pass pending a PII decision.
  *
  * Unlike products/orders, WooCommerce does not register a native customer
- * read ability (checked 2026-09-23, WooCommerce 11.0.1 - see
- * AGENTWARDEN_STRATEGY.md §7), so this one does not duplicate core.
+ * read ability (checked 2026-09-23, WooCommerce 11.0.1), so this one does
+ * not duplicate core.
  *
  * PII policy: a customer's name/email is the entire point of this ability
  * (an agent asking "who is customer #42" needs an answer), so the ability's
  * *output* includes it - same as WooCommerce's own REST API would. The
- * *audit log* never does, per §1.1 point 4: only the customer's numeric ID
- * is recorded, exactly like the orders log.
+ * *audit log* never does: only the customer's numeric ID is recorded,
+ * exactly like the orders log.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

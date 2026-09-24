@@ -3,7 +3,7 @@
  * Admin page: lists the abilities AgentWarden has registered and the most
  * recent audit log entries. Read-only by design - there is nothing to
  * configure yet in this skeleton (no limits/policies exist until the Pro
- * write axis lands, per AGENTWARDEN_STRATEGY.md §3-4).
+ * write axis lands).
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

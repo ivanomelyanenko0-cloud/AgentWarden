@@ -6,8 +6,8 @@
  * High-Performance Order Storage).
  *
  * Deliberately excludes customer PII (name, email, address, phone) from both
- * the ability output and the audit log - see AGENTWARDEN_STRATEGY.md §1.1.
- * Only the customer's numeric user ID is exposed, same as a WooCommerce
+ * the ability output and the audit log. Only the customer's numeric user
+ * ID is exposed, same as a WooCommerce
  * REST API response scoped without the `read_private_orders`-level detail.
  * A dedicated customer-read ability now exists (includes/abilities/read-customers.php)
  * for when an agent actually needs contact details, kept separate so it can be

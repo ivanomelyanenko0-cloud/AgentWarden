@@ -1,9 +1,8 @@
 <?php
 /**
  * Read-only product abilities: `agentwarden/list-products` and
- * `agentwarden/get-product`. First slice of the Free "read" axis from
- * AGENTWARDEN_STRATEGY.md §3 (1.0.0) - store data an agent can safely look
- * at, gated behind the same capability a shop manager needs in wp-admin.
+ * `agentwarden/get-product` - store data an agent can safely look at,
+ * gated behind the same capability a shop manager needs in wp-admin.
  *
  * Deliberately excludes anything resembling a write path (no `set_*` calls
  * on WC_Product anywhere in this file) - that split is what makes the Free

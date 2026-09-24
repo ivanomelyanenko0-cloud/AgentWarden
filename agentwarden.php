@@ -15,9 +15,9 @@
  * Requires Plugins:  woocommerce
  *
  * "AgentWarden" is a working name and may still change before the first
- * public release (see AGENTWARDEN_STRATEGY.md) - every internal identifier
- * lives behind the AGWD_/agwd_ prefix below so a rename stays a mechanical
- * find/replace instead of an architecture change.
+ * public release - every internal identifier lives behind the AGWD_/agwd_
+ * prefix below so a rename stays a mechanical find/replace instead of an
+ * architecture change.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
