@@ -3,7 +3,7 @@ Contributors: lukystile
 Tags: ai, mcp, abilities api, woocommerce, agent
 Requires at least: 6.9
 Tested up to: 7.1
-Stable tag: 0.1.0
+Stable tag: 1.0.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -16,7 +16,8 @@ A trust layer between AI agents and your WooCommerce store: safe, audited read a
 
 * **Products** — list and look up products, including price and stock.
 * **Orders** — list and look up orders and their line items, without exposing customer personal data.
-* **Audit log** — every ability call is recorded (what was read, when, by whom), visible from the AgentWarden admin page.
+* **Customers** — list and look up customer accounts (no WooCommerce core ability covers this today).
+* **Audit log** — every ability call is recorded (what was read, when, by whom), visible from the AgentWarden admin page. IDs only, never names, emails, or addresses - even for the Customers abilities.
 
 Everything an agent can do here is *read-only*. Letting an agent safely *change* your store — prices, discounts, refunds, order status — is a separate, deliberately harder problem: dry-run previews, limits, anomaly detection, and rollback. That's the planned scope of AgentWarden Pro, not yet built.
 
@@ -44,5 +45,7 @@ No. AgentWarden itself makes no external requests. It only exposes read access t
 
 == Changelog ==
 
-= 0.1.0 =
-* Initial skeleton: ability category, `list-products`/`get-product`, `list-orders`/`get-order`, PII-free audit log, admin page.
+= 1.0.0 =
+* First public release.
+* Read-only abilities: `list-products`/`get-product`, `list-orders`/`get-order`, `list-customers`/`get-customer`.
+* PII-free audit log (IDs only) and an admin page listing registered abilities and recent activity.

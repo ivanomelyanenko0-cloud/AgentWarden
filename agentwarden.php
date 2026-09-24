@@ -3,7 +3,7 @@
  * Plugin Name:       AgentWarden
  * Plugin URI:        https://cognitolab.net/products/agentwarden
  * Description:       A trust layer between AI agents and your WooCommerce store: safe, audited read access via the WordPress Abilities API.
- * Version:           0.1.0
+ * Version:           1.0.0
  * Requires at least: 6.9
  * Requires PHP:      7.4
  * Author:            CognitoLab
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'AGWD_VERSION', '0.1.0' );
+define( 'AGWD_VERSION', '1.0.0' );
 define( 'AGWD_PLUGIN_FILE', __FILE__ );
 define( 'AGWD_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'AGWD_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
